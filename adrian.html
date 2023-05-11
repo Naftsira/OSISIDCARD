@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Front/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
@@ -17,7 +17,7 @@
   ></script>
     <title>OSIS | SMAM17A</title>
   </head>
-  <body>
+  <body id="bod">
     <header>
       <div class="Headertab">
         <div class="judul">
@@ -34,20 +34,25 @@
         </div>
       </div>
     </header>
-    <main>
-      <canvas class="background"></canvas>
-      <section class="maininfo">
+    <main class="sct">
+      <canvas class="background" #brr></canvas>
+      <section class="maininfo" id="grid">
         
-        <div class="foto"> <img src="../img/PAS/Theo.jpg" alt="PAS"></div>
+        <div class="foto"> <img src="./img/PAS/Adrian.jpg" alt="PAS"></div>
         <div class="nama" id="box"><p>theo jesen naftali sirait</p></div>
-        <div class="jabatan" id="box"><p>ketua umum</p></div>
-        <div class="jobdesc" id="box"><p>divisi</p></div>
-        <div class="job">
-          <p class="p1" id="box">humas</p>
-          <p class="p2" id="box">koordinator<br>sponsor</p>
+        <div id="container">
+          <div class="jabatan" id="box"><p>ketua umum</p></div>
+          <div class="jobdesc" id="box"><p>divisi</p></div>
+          <div id="job1">
+            <p class="p1" id="box">humas</p>
+            <p class="p2" id="box">koordinator<br>sponsor</p>
+            <p class="p2" id="box">koordinator<br></p>
+        </div>
+        <div id="job2">
+        </div>
         </div>
       </section>
-      <script src="script.js"></script>
+      <script src="Front/script.js"></script>
 
     </main>
     <footer>

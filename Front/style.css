@@ -1,10 +1,10 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(0, 0, 0);
   margin: auto;
   background-image: linear-gradient(-70deg, #1a0f3e 23%, #6457c6 100%);
 }
@@ -17,13 +17,13 @@ main p {
   text-transform: uppercase;
   font-weight: bolder;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2em;
   align-items: center;
 }
 
 .Headertab {
   background: linear-gradient(140deg, #b8100f, #910100);
-  width: 24%;
+  width: 22.6em;
   height: 100vh;
   left: 0;
   box-shadow: 0px 0px 15px 4px black;
@@ -41,9 +41,9 @@ main p {
   color: yellow;
 }
 .logo img {
-  height: 25vh;
+  height: 12em;
   align-items: center;
-  border: 12px solid rgb(255, 255, 0);
+  border: 0.5em solid rgb(255, 255, 0);
   border-radius: 100% !important;
   padding: 3px;
   margin: auto;
@@ -52,13 +52,13 @@ main p {
   margin-top: 5%;
   text-transform: uppercase;
   font-weight: 1000;
-  font-size: 4vh;
+  font-size: 2em;
   letter-spacing: 5px;
   color: rgb(255, 255, 0);
 }
 
 .Contacticon {
-  margin: 30%;
+  margin: 3em;
   display: flex;
   justify-content: space-around;
   color: #ffff;
@@ -82,12 +82,13 @@ a:hover {
 }
 
 .maininfo {
-  background-color: transparent;
-  width: 76%;
+  width: 77vw;
   height: 93vh;
   background-size: cover;
   margin-left: auto;
   z-index: 3;
+  position: absolute;
+  margin: 0 0 0 22.6em;
 }
 
 .background {
@@ -100,16 +101,16 @@ a:hover {
   z-index: 2;
 }
 .foto img {
-  width: 37vh;
+  width: 16em;
   height: 50vh;
   background-size: cover center;
-  margin: 10px 20px 15px 20px;
-  border-radius: 20px;
+  margin: 1em 1em 0.5em 1em;
+  border-radius: 15px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 #box {
-  border-radius: 20px;
+  border-radius: 15px;
   background: linear-gradient(135deg, rgba(225, 225, 225, 0.8), rgba(225, 225, 225, 0.4));
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(10px);
@@ -119,51 +120,51 @@ a:hover {
   justify-content: center;
   align-items: center;
   z-index: 2;
+  position: relative;
 }
 
 .nama {
-  width: 37vh;
+  width: 16em;
   height: 35vh;
-  margin: 0 10px 10px 20px;
+  margin: 0.5em 1em 0 1em;
   position: relative;
 }
 
 .jabatan {
-  background-color: yellow;
-  width: 110vh;
+  width: 74%;
   height: 25vh;
-  position: absolute;
-  margin: -43.4% 80px 20px 20.8%;
-  border-radius: 0px;
+  margin: -41em 0em 42em 18em;
+  border-radius: 15px;
 }
 
 .jobdesc {
-  background-color: rebeccapurple;
-  width: 110vh;
+  width: 74%;
   height: 13vh;
-  position: absolute;
-  margin: -30.5% 80px 20px 20.8%;
-  border-radius: 0px;
+  margin: -41em 0em 0em 18em;
+  border-radius: 15px;
+  display: none;
+}
+
+#job1 {
+  position: relative;
+  margin: -1em 0 0 18em;
 }
 
 .p1 {
-  background-color: greenyellow;
-  width: 54vh;
+  width: 27.5vw;
   height: 20vh;
   position: absolute;
-  margin: -23.4% 80px 20px 20.8%;
 }
 
 .p2 {
-  background-color: peru;
-  width: 54vh;
+  width: 27.5vw;
   height: 20vh;
   position: absolute;
-  margin: -23.4% 80px 20px 48%;
+  margin: -5.6em 0 0 14em;
 }
 
 .footblock {
-  width: 76%;
+  width: 78em;
   height: 5vh;
   position: absolute;
   margin-left: auto;
@@ -172,6 +173,7 @@ a:hover {
   color: #ffff;
   bottom: 0;
   right: 0;
+  left: 9;
   text-align: center;
   background-color: #910100;
   z-index: -1;
@@ -180,7 +182,97 @@ a:hover {
 @keyframes bounce {
   0% {
     transform: scale(1);
-}
+  }
   100% {
     transform: scale(1.3);
+  }
+}
+
+@media (max-width: 1280px) {
+  .jabatan {
+    width: 48vw;
+  }
+  .jobdesc {
+    width: 48vw;
+  }
+  .p1 {
+    width: 23.5vw;
+  }
+  .p2 {
+    width: 23.5vw;
+    margin-left: 9.8em;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 500px) {
+  .maininfo {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    margin: auto;
+  }
+  #bod {
+    margin: auto;
+    height: 290vh;
+  }
+
+  #brr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .Headertab {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    margin: 200vh auto 0 auto;
+  }
+  .foto img {
+    margin: 28vh auto 0 auto;
+    height: 45vh;
+    align-items: center;
+    display: flex;
+    background-position: center;
+  }
+  .nama {
+    width: 85vw;
+    height: 20vh;
+    margin: 4vh auto 0 auto;
+  }
+  #box {
+    width: 85vw;
+    height: 20vh;
+  }
+  .jabatan {
+    margin: -92vh auto 0 auto;
+  }
+  .jobdesc {
+    margin: 75vh auto 0 auto;
+  }
+  #job1 {
+    position: absolute;
+    height: 10px;
+  }
+  .p1 {
+    height: 10vh;
+    margin: 4vh auto 0 -39vh;
+  }
+  #job1 p {
+    background: rgba(255, 247, 0, 0.6);
+  }
+
+  .p2 {
+    height: 10vh;
+    margin: 2vh auto 0 -39vh;
+  }
+  .footblock {
+    display: none;
+  }
 }

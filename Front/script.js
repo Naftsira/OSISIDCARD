@@ -1,7 +1,7 @@
 var particles = Particles.init({
   selector: ".background",
   color: ["#FF0099", "#00FFFF"],
-  speed: 2,
+  speed: 1,
   connectParticles: true,
   responsive: [
     {
