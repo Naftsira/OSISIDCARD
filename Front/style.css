@@ -142,25 +142,23 @@ a:hover {
   height: 13vh;
   margin: -41em 0em 0em 18em;
   border-radius: 15px;
-  display: none;
 }
 
 #job1 {
   position: relative;
-  margin: -1em 0 0 18em;
+  margin: -1em auto auto 18em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .p1 {
-  width: 27.5vw;
+  width: 74%;
   height: 20vh;
-  position: absolute;
 }
 
 .p2 {
-  width: 27.5vw;
+  width: 74%;
   height: 20vh;
-  position: absolute;
-  margin: -5.6em 0 0 14em;
 }
 
 .footblock {
