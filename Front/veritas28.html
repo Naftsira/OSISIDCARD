@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon-32x32.png" />
+    <title>Veritas'28</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- GFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="antialiased">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-sm">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div id="logoName" class="font-serif text-2xl font-bold tittleNameBef tracking-wider">Veritas'28</div>
+        <!-- Nav -->
+        <nav class="hidden md:flex items-center space-x-10 text-gray-300 font-medium">
+          <a href="#legacy" class="nav-link">Tentang Kami</a>
+          <a href="#pillars" class="nav-link">Our Programs</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#contact" class="px-5 py-2 border border-gold-accent text-gold-accent rounded-md hover:bg-gold-accent hover:text-dark-charcoal transition-all duration-300">Contact Us</a>
+        </nav>
+        <!-- Mobile NavButton -->
+        <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none z-50">
+          <svg id="menu-open-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+          <svg id="menu-close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-black/70 backdrop-blur-md md:hidden">
+        <div class="px-2 pt-24 pb-3 space-y-4 flex flex-col items-center">
+          <a href="#legacy" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-xl font-medium">Tentang Kami</a>
+          <a href="#pillars" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-xl font-medium">Our Programs</a>
+          <a href="#gallery" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-xl font-medium">Gallery</a>
+          <a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-xl font-medium">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-screen min-h-[700px] flex items-center justify-center text-white parallax" style="background-image: url('/img/header.jpg?text=Veritas+2023-2024')">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="text-center z-10 p-6" data-aos="fade-up">
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">Satu Periode, Satu Warisan.</h1>
+        <p class="text-xl md:text-2xl mt-6 max-w-3xl mx-auto font-light text-gray-200">Sebuah babak pengabdian telah tuntas. Terima kasih atas seluruh dedikasi, kolaborasi, dan kerja keras selama periode 2022—2023.</p>
+      </div>
+    </section>
+
+    <main class="bg-cream-white">
+      <!-- Legacy Section -->
+      <section id="legacy" class="py-20 md:py-28">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div data-aos="fade-right">
+              <img src="/img/aboutUs.jpg" alt="Foto Tim Angkatan [Nama Angkatan]" class="rounded-lg shadow-2xl object-cover w-full h-full" />
+            </div>
+            <div data-aos="fade-left" data-aos-delay="200">
+              <h2 class="text-4xl md:text-5xl font-bold mb-6 text-maroon-deep">Tentang Kami</h2>
+              <p class="text-lg text-gray-700 mb-4">
+                Selama masa bakti kami, Angkatan Veritas berfokus untuk meletakkan fondasi yang kokoh bagi masa depan organisasi. Kami berupaya menerjemahkan visi menjadi aksi, dan gagasan menjadi kenyataan.
+              </p>
+              <p class="text-lg text-gray-700">
+                Setiap program yang terlaksana dan setiap tantangan yang teratasi adalah buah dari kerja kolektif dan semangat kebersamaan. Halaman ini kami dedikasikan untuk mengenang dan merayakan setiap pencapaian tersebut.
+              </p>
+              <div class="mt-8 pt-6 border-t-2 border-gold-accent w-24">
+                <p class="text-xl font-bold text-maroon-primary">Sebuah Amanah Tuntas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pillars Section -->
+      <section id="pillars" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-maroon-deep">Our Programs</h2>
+            <p class="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">Tiga Program utama yang menjadi fokus dari periode kepengurusan kami.</p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8 text-left">
+            <div class="legacy-card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="text-3xl font-bold text-maroon-primary mb-4">Mutiara Cup Ke-8</h3>
+              <p class="text-gray-600">
+                Program ini, sebagaimana pendahulu kami, bertujuan mengasah bakat siswa sekaligus membangun kolaborasi antarlembaga pendidikan. Dengan beragam ajang kompetisi, kami ingin memotivasi siswa untuk berprestasi dan berinteraksi.
+                Dampaknya, kami berharap akan lahir generasi berdaya saing tinggi, dengan jejaring yang luas, serta semangat sportivitas dan persahabatan yang kuat.
+              </p>
+            </div>
+            <div class="legacy-card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-3xl font-bold text-maroon-primary mb-4">Studi Banding OSIS Antarsekolah</h3>
+              <p class="text-gray-600">
+                Program ini bertujuan meningkatkan kualitas OSIS melalui pertukaran ide. Dampaknya, kami berharap program kerja lebih kreatif, keterampilan meningkat, dan kolaborasi makin kuat untuk menciptakan lingkungan sekolah yang lebih
+                dinamis.
+              </p>
+            </div>
+            <div class="legacy-card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+              <h3 class="text-3xl font-bold text-maroon-primary mb-4">Razia Kedisiplinan</h3>
+              <p class="text-gray-600">
+                Program ini bertujuan meningkatkan kesadaran dan ketaatan siswa terhadap peraturan sekolah. Dampaknya, kami berharap terbentuknya karakter siswa yang lebih disiplin dan bertanggung jawab, menciptakan lingkungan belajar yang
+                kondusif dan harmonis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="py-20 md:py-28 maroon-gradient text-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold">Gallery</h2>
+            <p class="text-lg text-cream-white/80 mt-4">Momen-momen tak terlupakan dari perjalanan kita bersama.</p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="overflow-hidden rounded-lg group" data-aos="zoom-in">
+              <img src="/img/crowded.JPG" alt="Momen Pelantikan" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div class="col-span-1 md:col-span-2 overflow-hidden rounded-lg group" data-aos="zoom-in" data-aos-delay="100">
+              <img src="/img/sertijab.JPG" alt="Suasana Rapat Kerja" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div class="overflow-hidden rounded-lg group" data-aos="zoom-in" data-aos-delay="200">
+              <img src="/img/kebersamaan.jpg" alt="Pelaksanaan Program" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div class="col-span-1 md:col-span-2 overflow-hidden rounded-lg group" data-aos="zoom-in" data-aos-delay="300">
+              <img src="/img/seeUonTop.png" alt="Momen Kebersamaan Tim" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div class="overflow-hidden rounded-lg group" data-aos="zoom-in" data-aos-delay="400">
+              <img src="/img/bakti.jpg" alt="Menghadapi Tantangan" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div class="overflow-hidden rounded-lg group" data-aos="zoom-in" data-aos-delay="500">
+              <img src="/img/bendera.jpg" alt="Momen Serah Terima Jabatan" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark-charcoal text-gray-300">
+      <div class="container mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-3 gap-10">
+          <div class="md:col-span-1">
+            <h3 class="font-serif text-2xl font-bold titleNameFooter mb-4">Veritas'28</h3>
+            <p class="text-gray-400 max-w-xs">Periode 2022—2023. Sebuah catatan perjalanan, dedikasi, dan kerja bersama.</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-black mb-4 tracking-wider">Tautan Cepat</h4>
+            <ul class="space-y-3">
+              <li><a href="#legacy" class="hover:text-gold-accent transition-colors text-gray-400">Tentang Kami</a></li>
+              <li><a href="#pillars" class="hover:text-gold-accent transition-colors text-gray-400">Our Programs</a></li>
+              <li><a href="#gallery" class="hover:text-gold-accent transition-colors text-gray-400">Gallery</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-black mb-4 tracking-wider">Contact Us</h4>
+            <p class="text-gray-400">Meskipun masa bakti telah usai, silaturahmi tetap terjalin.</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=osissmam17a.veritas28@gmail.com&su=Perihal%20[--]&body=Salam%20sejahtera&bcc=theo.sirait28@gmail.com" target="_blank" class="titleName mt-2 linkGm"
+              >osissmam17a.veritas28@gmail.com</a
+            >
+            <!-- list contact page -->
+            <div class="flex space-x-4 mt-4"></div>
+          </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500">
+          <p>
+            &copy; 2025 Veritas. Dirancang dengan Kebanggaan dan Kebersamaan.<br />
+            All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS (Animate On Scroll) Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS File -->
+    <script src="script.js"></script>
+  </body>
+</html>

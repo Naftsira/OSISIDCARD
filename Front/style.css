@@ -1,301 +1,114 @@
-html {
-  box-sizing: border-box;
-  overflow-x: hidden;
+/* Custom CSS untuk nuansa premium dengan tema Merah Marun */
+:root {
+  --maroon-deep: #400000; /* Merah marun yang lebih dalam */
+  --maroon-primary: #800000; /* Merah marun klasik */
+  --gold-accent: #bfa169; /* Emas yang lebih halus sebagai aksen */
+  --cream-white: #fdf5e6; /* Putih gading untuk latar */
+  --dark-charcoal: #1a1a1a;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  margin: auto;
-  background-color: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cream-white);
+  color: var(--dark-charcoal);
+  overflow-x: hidden; /* Mencegah scroll horizontal */
 }
 
-#deks {
-  background-color: antiquewhite;
-  height: 100vh;
-  width: 100vw;
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+  font-family: "Cormorant Garamond", serif;
+}
+/* bg nav */
+.bgNavRed {
+  background-color: var(--maroon-deep);
+}
+.tittleNameBef {
+  color: #ffffff;
+}
+.titleName {
+  color: var(--gold-accent);
+}
+.titleNameFooter {
+  color: var(--maroon-primary);
+}
+
+/* Gradient Merah Marun yang Mewah */
+.maroon-gradient {
+  background: linear-gradient(135deg, var(--maroon-deep) 0%, var(--maroon-primary) 100%);
+}
+
+.text-gold-accent {
+  color: var(--gold-accent);
+}
+
+.border-gold-accent {
+  border-color: var(--gold-accent);
+}
+
+.hover\:bg-gold-accent:hover {
+  background-color: var(--gold-accent);
+}
+
+.hover\:text-gold-accent:hover {
+  color: var(--gold-accent);
+}
+
+/* Animasi Garis Bawah pada Navigasi Desktop */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-link::after {
+  content: "";
   position: absolute;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  font-weight: 1000;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  font-family: "Ubuntu Mono", monospace;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--gold-accent);
+  transition: width 0.4s ease;
 }
-#deks i {
-  color: red;
-  font-size: 1.3em;
-}
-
-#mob {
-  display: none;
-}
-
-main p {
+.nav-link:hover::after {
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-align: center;
-  font-size: 2em;
-  align-items: center;
+}
+.nav-link:hover {
+  color: white;
 }
 
-.Headertab {
-  background: linear-gradient(140deg, #b8100f, #910100);
-  width: 22.6em;
-  height: 100vh;
-  left: 0;
-  box-shadow: 0px 0px 15px 4px black;
-  position: absolute;
-}
-.judul {
-  font-size: 6vh;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #ffff;
-  padding: 0 0 60px 10px;
-}
-.logo {
-  text-align: center;
-  color: yellow;
-}
-.logo img {
-  height: 12em;
-  align-items: center;
-  border: 0.5em solid rgb(255, 255, 0);
-  border-radius: 100% !important;
-  padding: 3px;
-  margin: auto;
-}
-.logoname {
-  margin-top: 5%;
-  text-transform: uppercase;
-  font-weight: 1000;
-  font-size: 2em;
-  letter-spacing: 5px;
-  color: rgb(255, 255, 0);
-}
-
-.Contacticon {
-  margin: 3em;
-  display: flex;
-  justify-content: space-around;
-  color: #ffff;
-  text-align: center;
-  font-size: 4.4vh;
-}
-
-a {
-  border: none;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.5s ease-in-out;
-}
-
-a:hover {
-  transform: scale(1.2);
-  animation-name: bounce;
-  animation-duration: 0.3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-.maininfo {
-  width: 77vw;
-  height: 93vh;
+/* Efek Parallax Halus */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  margin-left: auto;
-  z-index: 3;
-  position: absolute;
-  margin: 0 0 0 22.6em;
 }
 
-.background {
-  position: absolute;
-  z-index: -1;
+/* Styling Kartu */
+.legacy-card {
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.legacy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.linkGm:hover {
+  text-decoration-line: underline;
+  color: var(--maroon-primary);
 }
 
-.foto {
-  position: relative;
-  z-index: 2;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
-.foto img {
-  width: 18em;
-  height: 50vh;
-  background-size: cover center;
-  margin: 1em 1em 0.5em 1em;
-  border-radius: 15px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+::-webkit-scrollbar-track {
+  background: var(--cream-white);
 }
-
-#box {
-  border-radius: 15px;
-  background: linear-gradient(135deg, rgba(225, 225, 225, 0.8), rgba(225, 225, 225, 0.4));
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  position: relative;
-}
-
-.nama {
-  width: 16em;
-  height: 35vh;
-  margin: 0.5em 1em 0 1em;
-  position: relative;
-}
-
-.jabatan {
-  width: 74%;
-  height: 25vh;
-  margin: -41em 0em 42em 18em;
-  border-radius: 15px;
-}
-
-.jobdesc {
-  width: 74%;
-  height: 13vh;
-  margin: -41em 0em 0em 18em;
-  border-radius: 15px;
-}
-
-#job1 {
-  position: relative;
-  margin: -1em auto auto 18em;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.p1 {
-  width: 74%;
-  height: 20vh;
-}
-
-.p2 {
-  width: 74%;
-  height: 20vh;
-}
-
-.footblock {
-  width: 78em;
-  height: 5vh;
-  position: absolute;
-  margin-left: auto;
-  padding: 15px 0 0 0;
-  font-size: 17px;
-  color: #ffff;
-  bottom: 0;
-  right: 0;
-  left: 9;
-  text-align: center;
-  background-color: #910100;
-  z-index: -1;
-}
-
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.3);
-  }
-}
-
-@media (max-width: 1280px) {
-  .jabatan {
-    width: 48vw;
-  }
-  .jobdesc {
-    width: 48vw;
-  }
-  .p1 {
-    width: 23.5vw;
-  }
-  .p2 {
-    width: 23.5vw;
-    margin-left: 9.8em;
-  }
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 500px) {
-  #mob {
-    display: inline;
-  }
-  #deks {
-    display: none;
-  }
-  .maininfo {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    margin: auto;
-  }
-  #bod {
-    margin: auto;
-    height: 290vh;
-  }
-
-  #brr {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  .Headertab {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    margin: 200vh auto 0 auto;
-  }
-  .foto img {
-    margin: 28vh auto 0 auto;
-    height: 45vh;
-    align-items: center;
-    display: flex;
-    background-position: center;
-  }
-  .nama {
-    width: 85vw;
-    height: 20vh;
-    margin: 4vh auto 0 auto;
-  }
-  #box {
-    width: 85vw;
-    height: 20vh;
-  }
-  .jabatan {
-    margin: -92vh auto 0 auto;
-  }
-  .jobdesc {
-    margin: 75vh auto 0 auto;
-  }
-  #job1 {
-    position: absolute;
-    height: 10px;
-    margin-left: 92vw;
-  }
-  .p1 {
-    height: 10vh;
-    margin: 2vh auto 0 auto;
-    background: rgba(255, 247, 0, 0.651) !important;
-  }
-  .footblock {
-    display: none;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: var(--maroon-deep);
+  border-radius: 10px;
 }
