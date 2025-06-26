@@ -1,44 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon-32x32.png" />
     <title>Veritas'28</title>
-
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <!-- GFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-
-    <!-- CSS File -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="antialiased">
-    <!-- Header -->
-    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-sm">
+    <div id="loading"><h1>Loading...</h1></div>
+    <header id="header" class="fixed contentHide top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-sm">
       <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <div id="logoName" class="font-serif text-2xl font-bold tittleNameBef tracking-wider">Veritas'28</div>
-        <!-- Nav -->
         <nav class="hidden md:flex items-center space-x-10 text-gray-300 font-medium">
           <a href="#legacy" class="nav-link">Tentang Kami</a>
           <a href="#pillars" class="nav-link">Our Programs</a>
           <a href="#gallery" class="nav-link">Gallery</a>
           <a href="#contact" class="px-5 py-2 border border-gold-accent text-gold-accent rounded-md hover:bg-gold-accent hover:text-dark-charcoal transition-all duration-300">Contact Us</a>
         </nav>
-        <!-- Mobile NavButton -->
         <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none z-50">
           <svg id="menu-open-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
           <svg id="menu-close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
         </button>
       </div>
-      <!-- Mobile Menu -->
       <nav id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-black/70 backdrop-blur-md md:hidden">
         <div class="px-2 pt-24 pb-3 space-y-4 flex flex-col items-center">
           <a href="#legacy" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-xl font-medium">Tentang Kami</a>
@@ -48,18 +37,15 @@
         </div>
       </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section class="h-screen min-h-[700px] flex items-center justify-center text-white parallax" style="background-image: url('/img/header.jpg?text=Veritas+2023-2024')">
+    <!-- Hero -->
+    <section class="h-screen min-h-[700px] flex items-center justify-center text-white parallax relative" style="background-image: url('/img/header.jpg?text=Veritas+2023-2024')">
       <div class="absolute inset-0 bg-black/60"></div>
-      <div class="text-center z-10 p-6" data-aos="fade-up">
+      <div id="hero" class="contentHide text-center z-10 p-6" data-aos="fade-up">
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">Satu Periode, Satu Warisan.</h1>
         <p class="text-xl md:text-2xl mt-6 max-w-3xl mx-auto font-light text-gray-200">Sebuah babak pengabdian telah tuntas. Terima kasih atas seluruh dedikasi, kolaborasi, dan kerja keras selama periode 2022—2023.</p>
       </div>
     </section>
-
     <main class="bg-cream-white">
-      <!-- Legacy Section -->
       <section id="legacy" class="py-20 md:py-28">
         <div class="container mx-auto px-6">
           <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -81,8 +67,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Pillars Section -->
       <section id="pillars" class="py-20 md:py-28 bg-white">
         <div class="container mx-auto px-6">
           <div class="text-center mb-16" data-aos="fade-up">
@@ -114,8 +98,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Gallery Section -->
       <section id="gallery" class="py-20 md:py-28 maroon-gradient text-white">
         <div class="container mx-auto px-6">
           <div class="text-center mb-16" data-aos="fade-up">
@@ -145,8 +127,6 @@
         </div>
       </section>
     </main>
-
-    <!-- Footer -->
     <footer id="contact" class="bg-dark-charcoal text-gray-300">
       <div class="container mx-auto px-6 py-16">
         <div class="grid md:grid-cols-3 gap-10">
@@ -168,7 +148,6 @@
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=osissmam17a.veritas28@gmail.com&su=Perihal%20[--]&body=Salam%20sejahtera&bcc=theo.sirait28@gmail.com" target="_blank" class="titleName mt-2 linkGm"
               >osissmam17a.veritas28@gmail.com</a
             >
-            <!-- list contact page -->
             <div class="flex space-x-4 mt-4"></div>
           </div>
         </div>
@@ -180,11 +159,7 @@
         </div>
       </div>
     </footer>
-
-    <!-- AOS (Animate On Scroll) Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Custom JS File -->
     <script src="script.js"></script>
   </body>
 </html>

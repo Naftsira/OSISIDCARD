@@ -4,15 +4,13 @@ const mobileMenu = document.getElementById("mobile-menu");
 const openIcon = document.getElementById("menu-open-icon");
 const closeIcon = document.getElementById("menu-close-icon");
 const logoName = document.getElementById("logoName");
-
-// content loaded
+const hero = document.getElementById("hero");
+const loadScreen = document.getElementById("loading");
 document.addEventListener("DOMContentLoaded", () => {
-  // Inisialisasi AOS (Animate on Scroll)
   AOS.init({
-    duration: 800, // Durasi animasi dalam milidetik
-    once: false, // Animasi hanya berjalan sekali saat scroll
+    duration: 800,
+    once: false,
   });
-  // Navbar
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       header.classList.add("bgNavRed", "shadow-lg");
@@ -24,15 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
       openIcon.setAttribute("stroke", "currentColor");
     }
   });
-  // open-close Nav
   const toggleMenu = () => {
     mobileMenu.classList.toggle("hidden");
     openIcon.classList.toggle("hidden");
     closeIcon.classList.toggle("hidden");
   };
-  // Event listener for Nav
   menuButton.addEventListener("click", toggleMenu);
-  // closed when nav-clicked
   const mobileMenuLinks = mobileMenu.querySelectorAll("a");
   mobileMenuLinks.forEach((link) => {
     link.addEventListener("click", () => {
@@ -41,4 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+window.addEventListener("load", () => {
+  header.classList.remove("contentHide");
+  hero.classList.remove("contentHide");
+  loadScreen.classList.add("contentHide");
 });

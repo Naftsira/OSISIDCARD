@@ -1,19 +1,34 @@
-/* Custom CSS untuk nuansa premium dengan tema Merah Marun */
 :root {
-  --maroon-deep: #400000; /* Merah marun yang lebih dalam */
-  --maroon-primary: #800000; /* Merah marun klasik */
-  --gold-accent: #bfa169; /* Emas yang lebih halus sebagai aksen */
-  --cream-white: #fdf5e6; /* Putih gading untuk latar */
+  --maroon-deep: #400000;
+  --maroon-primary: #800000;
+  --gold-accent: #bfa169;
+  --cream-white: #fdf5e6;
   --dark-charcoal: #1a1a1a;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--cream-white);
   color: var(--dark-charcoal);
-  overflow-x: hidden; /* Mencegah scroll horizontal */
+  overflow-x: hidden !important;
+  box-sizing: border-box;
 }
-
+#loading {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, var(--maroon-deep) 0%, var(--maroon-primary) 100%);
+}
+#loading h1 {
+  font-size: 7vw;
+  font-weight: bolder;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  color: var(--gold-accent);
+}
+.contentHide {
+  display: none;
+}
 h1,
 h2,
 h3,
@@ -21,7 +36,6 @@ h4,
 .font-serif {
   font-family: "Cormorant Garamond", serif;
 }
-/* bg nav */
 .bgNavRed {
   background-color: var(--maroon-deep);
 }
@@ -34,29 +48,21 @@ h4,
 .titleNameFooter {
   color: var(--maroon-primary);
 }
-
-/* Gradient Merah Marun yang Mewah */
 .maroon-gradient {
   background: linear-gradient(135deg, var(--maroon-deep) 0%, var(--maroon-primary) 100%);
 }
-
 .text-gold-accent {
   color: var(--gold-accent);
 }
-
 .border-gold-accent {
   border-color: var(--gold-accent);
 }
-
 .hover\:bg-gold-accent:hover {
   background-color: var(--gold-accent);
 }
-
 .hover\:text-gold-accent:hover {
   color: var(--gold-accent);
 }
-
-/* Animasi Garis Bawah pada Navigasi Desktop */
 .nav-link {
   position: relative;
   transition: color 0.3s ease;
@@ -78,16 +84,12 @@ h4,
 .nav-link:hover {
   color: white;
 }
-
-/* Efek Parallax Halus */
 .parallax {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* Styling Kartu */
 .legacy-card {
   background-color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -100,10 +102,8 @@ h4,
   text-decoration-line: underline;
   color: var(--maroon-primary);
 }
-
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 ::-webkit-scrollbar-track {
   background: var(--cream-white);
